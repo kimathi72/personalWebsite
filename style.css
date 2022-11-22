@@ -1,25 +1,20 @@
 #bannerTop{
     font-size: 25px;
     font-weight: 800;
-    color: rgb(206, 213, 218);
+    color: lightseagreen; 
     font-family: Courier New, monospace;
 }
 body {
     
     margin: auto;
-    padding: auto;
-    height:100%;
+    padding: 25px;
     
-    
-    
-    
-}
-.nav-link{
-    color:#ccc;
+        
 }
 
+
 .myMainNavigation{
-    margin: 25px;
+    margin-bottom: 5px;
     border-radius: 25px;
     border: 2px solid #0a0f04;
     border: 1px #ccc solid;
@@ -28,7 +23,90 @@ body {
 }
 nav{
     border-radius: 25px;
-    border: 2px solid #040701;
-    background-color: rgb(36, 37, 36);
-    color:#ccc;
+    border: 2px solid lightcoral;
+    background-color: white;
+    color:teal;
 }
+
+/* The side navigation menu */
+.sidebar {
+    margin: 10px;
+    padding: 10px;
+    width: 420px;
+    /*background-color:  #5ab7d3;*/
+    position: fixed;
+    height: 70%;
+    overflow: auto;
+    border-radius: 25px;
+   /* border: 2px solid #f1f1f1;*/
+   
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  #profilepic{height:250px;
+     width:250px;  
+     border-radius: 200px;
+     border:lightcoral 2px solid;
+     margin: 60px; 
+     
+    }
+
+    #sidenote{
+        text-align: center ; 
+        margin-top:20px; 
+        font-family:monospace;
+        font-weight: bold; 
+        color : rgb(244, 247, 248);
+        height:30%;
+        background-color: rgb(16, 96, 110);
+        padding-left: 15px;
+        padding-top: 50px;
+        border-radius: 40px;
+        border:lightcoral 2px solid;
+        
+        
+    }
